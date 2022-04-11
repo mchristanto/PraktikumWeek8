@@ -48,12 +48,29 @@ namespace PraktikumWeek8mtc
 
         private void cBoxKiri_SelectedIndexChanged(object sender, EventArgs e)
         {
+            DataTable dtKiri2 = new DataTable();
+            sqlQuery = "SELECT t.team_name, t.team_id, t.home_stadium, t.capacity , m.manager_name, p.player_name FROM team t, manager m, player p where t.manager_id = m.manager_id and p.player_id = t.captain_id";
+            sqlCommand = new MySqlCommand(sqlQuery, sqlConnect);
+            sqlAdapter = new MySqlDataAdapter(sqlCommand);
+            sqlAdapter.Fill(dtKiri2);
 
+            lblNamaManagerKiri.Text = dtKiri2.Rows[cBoxKiri.SelectedIndex][4].ToString();
+            lblNamaCaptainKiri.Text = dtKiri2.Rows[cBoxKiri.SelectedIndex][5].ToString();
+            lblNamaStadium.Text = dtKiri2.Rows[cBoxKiri.SelectedIndex][2].ToString();
+            lblJumlahCapacity.Text = dtKiri2.Rows[cBoxKiri.SelectedIndex][3].ToString();
+            //udh
         }
 
         private void cBoxKanan_SelectedIndexChanged(object sender, EventArgs e)
         {
-            lblNamaManagerKanan.Text = cBoxKanan.SelectedValue.ToString();
+            DataTable dtkanan2 = new DataTable();
+            sqlQuery = "SELECT t.team_name, t.team_id, t.home_stadium, t.capacity , m.manager_name, p.player_name FROM team t, manager m, player p where t.manager_id = m.manager_id and p.player_id = t.captain_id";
+            sqlCommand = new MySqlCommand(sqlQuery, sqlConnect);
+            sqlAdapter = new MySqlDataAdapter(sqlCommand);
+            sqlAdapter.Fill(dtkanan2);
+
+            lblNamaManagerKanan.Text = dtkanan2.Rows[cBoxKanan.SelectedIndex][4].ToString();
+            lblNamaCaptainKanan.Text = dtkanan2.Rows[cBoxKanan.SelectedIndex][5].ToString();
         }
     }
     
