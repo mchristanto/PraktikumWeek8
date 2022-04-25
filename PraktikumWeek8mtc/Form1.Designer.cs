@@ -43,149 +43,255 @@
             this.lblNamaStadium = new System.Windows.Forms.Label();
             this.lblJumlahCapacity = new System.Windows.Forms.Label();
             this.lblCapacity = new System.Windows.Forms.Label();
+            this.lblSkor = new System.Windows.Forms.Label();
+            this.lblHasilSkor = new System.Windows.Forms.Label();
+            this.lblHasilTanggal = new System.Windows.Forms.Label();
+            this.lblTanggal = new System.Windows.Forms.Label();
+            this.btnCheck = new System.Windows.Forms.Button();
+            this.dgvData = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvData)).BeginInit();
             this.SuspendLayout();
             // 
             // cBoxKiri
             // 
             this.cBoxKiri.FormattingEnabled = true;
-            this.cBoxKiri.Location = new System.Drawing.Point(53, 29);
+            this.cBoxKiri.Location = new System.Drawing.Point(40, 24);
+            this.cBoxKiri.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cBoxKiri.Name = "cBoxKiri";
-            this.cBoxKiri.Size = new System.Drawing.Size(261, 24);
+            this.cBoxKiri.Size = new System.Drawing.Size(197, 21);
             this.cBoxKiri.TabIndex = 0;
+            this.cBoxKiri.UseWaitCursor = true;
             this.cBoxKiri.SelectedIndexChanged += new System.EventHandler(this.cBoxKiri_SelectedIndexChanged);
             // 
             // cBoxKanan
             // 
             this.cBoxKanan.FormattingEnabled = true;
-            this.cBoxKanan.Location = new System.Drawing.Point(486, 29);
+            this.cBoxKanan.Location = new System.Drawing.Point(364, 24);
+            this.cBoxKanan.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cBoxKanan.Name = "cBoxKanan";
-            this.cBoxKanan.Size = new System.Drawing.Size(261, 24);
+            this.cBoxKanan.Size = new System.Drawing.Size(197, 21);
             this.cBoxKanan.TabIndex = 1;
+            this.cBoxKanan.UseWaitCursor = true;
             this.cBoxKanan.SelectedIndexChanged += new System.EventHandler(this.cBoxKanan_SelectedIndexChanged);
             // 
             // lblManagerKiri
             // 
             this.lblManagerKiri.AutoSize = true;
-            this.lblManagerKiri.Location = new System.Drawing.Point(50, 98);
+            this.lblManagerKiri.Location = new System.Drawing.Point(38, 80);
+            this.lblManagerKiri.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblManagerKiri.Name = "lblManagerKiri";
-            this.lblManagerKiri.Size = new System.Drawing.Size(67, 16);
+            this.lblManagerKiri.Size = new System.Drawing.Size(55, 13);
             this.lblManagerKiri.TabIndex = 2;
             this.lblManagerKiri.Text = "Manager: ";
+            this.lblManagerKiri.UseWaitCursor = true;
             // 
             // lblCaptainKiri
             // 
             this.lblCaptainKiri.AutoSize = true;
-            this.lblCaptainKiri.Location = new System.Drawing.Point(50, 136);
+            this.lblCaptainKiri.Location = new System.Drawing.Point(38, 110);
+            this.lblCaptainKiri.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblCaptainKiri.Name = "lblCaptainKiri";
-            this.lblCaptainKiri.Size = new System.Drawing.Size(56, 16);
+            this.lblCaptainKiri.Size = new System.Drawing.Size(46, 13);
             this.lblCaptainKiri.TabIndex = 3;
             this.lblCaptainKiri.Text = "Captain:";
+            this.lblCaptainKiri.UseWaitCursor = true;
             // 
             // lblNamaManagerKiri
             // 
             this.lblNamaManagerKiri.AutoSize = true;
-            this.lblNamaManagerKiri.Location = new System.Drawing.Point(141, 98);
+            this.lblNamaManagerKiri.Location = new System.Drawing.Point(106, 80);
+            this.lblNamaManagerKiri.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblNamaManagerKiri.Name = "lblNamaManagerKiri";
-            this.lblNamaManagerKiri.Size = new System.Drawing.Size(44, 16);
+            this.lblNamaManagerKiri.Size = new System.Drawing.Size(16, 13);
             this.lblNamaManagerKiri.TabIndex = 4;
-            this.lblNamaManagerKiri.Text = "label3";
+            this.lblNamaManagerKiri.Text = "...";
+            this.lblNamaManagerKiri.UseWaitCursor = true;
             // 
             // lblNamaCaptainKiri
             // 
             this.lblNamaCaptainKiri.AutoSize = true;
-            this.lblNamaCaptainKiri.Location = new System.Drawing.Point(141, 136);
+            this.lblNamaCaptainKiri.Location = new System.Drawing.Point(106, 110);
+            this.lblNamaCaptainKiri.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblNamaCaptainKiri.Name = "lblNamaCaptainKiri";
-            this.lblNamaCaptainKiri.Size = new System.Drawing.Size(44, 16);
+            this.lblNamaCaptainKiri.Size = new System.Drawing.Size(16, 13);
             this.lblNamaCaptainKiri.TabIndex = 5;
-            this.lblNamaCaptainKiri.Text = "label4";
+            this.lblNamaCaptainKiri.Text = "...";
+            this.lblNamaCaptainKiri.UseWaitCursor = true;
             // 
             // lblManagerKanan
             // 
             this.lblManagerKanan.AutoSize = true;
-            this.lblManagerKanan.Location = new System.Drawing.Point(483, 98);
+            this.lblManagerKanan.Location = new System.Drawing.Point(362, 80);
+            this.lblManagerKanan.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblManagerKanan.Name = "lblManagerKanan";
-            this.lblManagerKanan.Size = new System.Drawing.Size(67, 16);
+            this.lblManagerKanan.Size = new System.Drawing.Size(55, 13);
             this.lblManagerKanan.TabIndex = 6;
             this.lblManagerKanan.Text = "Manager: ";
+            this.lblManagerKanan.UseWaitCursor = true;
             // 
             // lblStadium
             // 
             this.lblStadium.AutoSize = true;
-            this.lblStadium.Location = new System.Drawing.Point(267, 196);
+            this.lblStadium.Location = new System.Drawing.Point(221, 144);
+            this.lblStadium.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblStadium.Name = "lblStadium";
-            this.lblStadium.Size = new System.Drawing.Size(59, 16);
+            this.lblStadium.Size = new System.Drawing.Size(48, 13);
             this.lblStadium.TabIndex = 7;
             this.lblStadium.Text = "Stadium:";
+            this.lblStadium.UseWaitCursor = true;
             // 
             // lblCaptainKanan
             // 
             this.lblCaptainKanan.AutoSize = true;
-            this.lblCaptainKanan.Location = new System.Drawing.Point(483, 136);
+            this.lblCaptainKanan.Location = new System.Drawing.Point(362, 110);
+            this.lblCaptainKanan.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblCaptainKanan.Name = "lblCaptainKanan";
-            this.lblCaptainKanan.Size = new System.Drawing.Size(56, 16);
+            this.lblCaptainKanan.Size = new System.Drawing.Size(46, 13);
             this.lblCaptainKanan.TabIndex = 8;
             this.lblCaptainKanan.Text = "Captain:";
+            this.lblCaptainKanan.UseWaitCursor = true;
             // 
             // lblNamaManagerKanan
             // 
             this.lblNamaManagerKanan.AutoSize = true;
-            this.lblNamaManagerKanan.Location = new System.Drawing.Point(589, 98);
+            this.lblNamaManagerKanan.Location = new System.Drawing.Point(442, 80);
+            this.lblNamaManagerKanan.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblNamaManagerKanan.Name = "lblNamaManagerKanan";
-            this.lblNamaManagerKanan.Size = new System.Drawing.Size(44, 16);
+            this.lblNamaManagerKanan.Size = new System.Drawing.Size(16, 13);
             this.lblNamaManagerKanan.TabIndex = 9;
-            this.lblNamaManagerKanan.Text = "label8";
+            this.lblNamaManagerKanan.Text = "...";
+            this.lblNamaManagerKanan.UseWaitCursor = true;
             // 
             // lblNamaCaptainKanan
             // 
             this.lblNamaCaptainKanan.AutoSize = true;
-            this.lblNamaCaptainKanan.Location = new System.Drawing.Point(589, 136);
+            this.lblNamaCaptainKanan.Location = new System.Drawing.Point(442, 110);
+            this.lblNamaCaptainKanan.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblNamaCaptainKanan.Name = "lblNamaCaptainKanan";
-            this.lblNamaCaptainKanan.Size = new System.Drawing.Size(44, 16);
+            this.lblNamaCaptainKanan.Size = new System.Drawing.Size(16, 13);
             this.lblNamaCaptainKanan.TabIndex = 10;
-            this.lblNamaCaptainKanan.Text = "label9";
+            this.lblNamaCaptainKanan.Text = "...";
+            this.lblNamaCaptainKanan.UseWaitCursor = true;
             // 
             // lblVS
             // 
             this.lblVS.AutoSize = true;
-            this.lblVS.Location = new System.Drawing.Point(379, 37);
+            this.lblVS.Location = new System.Drawing.Point(284, 30);
+            this.lblVS.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblVS.Name = "lblVS";
-            this.lblVS.Size = new System.Drawing.Size(25, 16);
+            this.lblVS.Size = new System.Drawing.Size(21, 13);
             this.lblVS.TabIndex = 11;
             this.lblVS.Text = "VS";
+            this.lblVS.UseWaitCursor = true;
             this.lblVS.Click += new System.EventHandler(this.lblVS_Click);
             // 
             // lblNamaStadium
             // 
             this.lblNamaStadium.AutoSize = true;
-            this.lblNamaStadium.Location = new System.Drawing.Point(351, 196);
+            this.lblNamaStadium.Location = new System.Drawing.Point(284, 144);
+            this.lblNamaStadium.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblNamaStadium.Name = "lblNamaStadium";
-            this.lblNamaStadium.Size = new System.Drawing.Size(44, 16);
+            this.lblNamaStadium.Size = new System.Drawing.Size(16, 13);
             this.lblNamaStadium.TabIndex = 12;
-            this.lblNamaStadium.Text = "label1";
+            this.lblNamaStadium.Text = "...";
+            this.lblNamaStadium.UseWaitCursor = true;
             // 
             // lblJumlahCapacity
             // 
             this.lblJumlahCapacity.AutoSize = true;
-            this.lblJumlahCapacity.Location = new System.Drawing.Point(351, 241);
+            this.lblJumlahCapacity.Location = new System.Drawing.Point(284, 171);
+            this.lblJumlahCapacity.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblJumlahCapacity.Name = "lblJumlahCapacity";
-            this.lblJumlahCapacity.Size = new System.Drawing.Size(44, 16);
+            this.lblJumlahCapacity.Size = new System.Drawing.Size(16, 13);
             this.lblJumlahCapacity.TabIndex = 13;
-            this.lblJumlahCapacity.Text = "label2";
+            this.lblJumlahCapacity.Text = "...";
+            this.lblJumlahCapacity.UseWaitCursor = true;
             // 
             // lblCapacity
             // 
             this.lblCapacity.AutoSize = true;
-            this.lblCapacity.Location = new System.Drawing.Point(267, 241);
+            this.lblCapacity.Location = new System.Drawing.Point(221, 171);
+            this.lblCapacity.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblCapacity.Name = "lblCapacity";
-            this.lblCapacity.Size = new System.Drawing.Size(63, 16);
+            this.lblCapacity.Size = new System.Drawing.Size(51, 13);
             this.lblCapacity.TabIndex = 14;
             this.lblCapacity.Text = "Capacity:";
+            this.lblCapacity.UseWaitCursor = true;
+            // 
+            // lblSkor
+            // 
+            this.lblSkor.AutoSize = true;
+            this.lblSkor.Location = new System.Drawing.Point(221, 255);
+            this.lblSkor.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblSkor.Name = "lblSkor";
+            this.lblSkor.Size = new System.Drawing.Size(32, 13);
+            this.lblSkor.TabIndex = 18;
+            this.lblSkor.Text = "Skor:";
+            this.lblSkor.UseWaitCursor = true;
+            // 
+            // lblHasilSkor
+            // 
+            this.lblHasilSkor.AutoSize = true;
+            this.lblHasilSkor.Location = new System.Drawing.Point(284, 255);
+            this.lblHasilSkor.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblHasilSkor.Name = "lblHasilSkor";
+            this.lblHasilSkor.Size = new System.Drawing.Size(16, 13);
+            this.lblHasilSkor.TabIndex = 17;
+            this.lblHasilSkor.Text = "...";
+            this.lblHasilSkor.UseWaitCursor = true;
+            // 
+            // lblHasilTanggal
+            // 
+            this.lblHasilTanggal.AutoSize = true;
+            this.lblHasilTanggal.Location = new System.Drawing.Point(284, 228);
+            this.lblHasilTanggal.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblHasilTanggal.Name = "lblHasilTanggal";
+            this.lblHasilTanggal.Size = new System.Drawing.Size(16, 13);
+            this.lblHasilTanggal.TabIndex = 16;
+            this.lblHasilTanggal.Text = "...";
+            this.lblHasilTanggal.UseWaitCursor = true;
+            // 
+            // lblTanggal
+            // 
+            this.lblTanggal.AutoSize = true;
+            this.lblTanggal.Location = new System.Drawing.Point(221, 228);
+            this.lblTanggal.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblTanggal.Name = "lblTanggal";
+            this.lblTanggal.Size = new System.Drawing.Size(49, 13);
+            this.lblTanggal.TabIndex = 15;
+            this.lblTanggal.Text = "Tanggal:";
+            this.lblTanggal.UseWaitCursor = true;
+            // 
+            // btnCheck
+            // 
+            this.btnCheck.Location = new System.Drawing.Point(287, 194);
+            this.btnCheck.Name = "btnCheck";
+            this.btnCheck.Size = new System.Drawing.Size(75, 23);
+            this.btnCheck.TabIndex = 19;
+            this.btnCheck.Text = "Check";
+            this.btnCheck.UseVisualStyleBackColor = true;
+            this.btnCheck.Click += new System.EventHandler(this.btnCheck_Click);
+            // 
+            // dgvData
+            // 
+            this.dgvData.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvData.Location = new System.Drawing.Point(13, 286);
+            this.dgvData.Name = "dgvData";
+            this.dgvData.Size = new System.Drawing.Size(575, 150);
+            this.dgvData.TabIndex = 20;
+            this.dgvData.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvData_CellContentClick);
             // 
             // formPertandingan
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 284);
+            this.ClientSize = new System.Drawing.Size(600, 447);
+            this.Controls.Add(this.dgvData);
+            this.Controls.Add(this.btnCheck);
+            this.Controls.Add(this.lblSkor);
+            this.Controls.Add(this.lblHasilSkor);
+            this.Controls.Add(this.lblHasilTanggal);
+            this.Controls.Add(this.lblTanggal);
             this.Controls.Add(this.lblCapacity);
             this.Controls.Add(this.lblJumlahCapacity);
             this.Controls.Add(this.lblNamaStadium);
@@ -201,10 +307,12 @@
             this.Controls.Add(this.lblManagerKiri);
             this.Controls.Add(this.cBoxKanan);
             this.Controls.Add(this.cBoxKiri);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "formPertandingan";
             this.Text = "Hasil Pertandingan";
             this.UseWaitCursor = true;
             this.Load += new System.EventHandler(this.Form1_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvData)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -227,6 +335,12 @@
         private System.Windows.Forms.Label lblNamaStadium;
         private System.Windows.Forms.Label lblJumlahCapacity;
         private System.Windows.Forms.Label lblCapacity;
+        private System.Windows.Forms.Label lblSkor;
+        private System.Windows.Forms.Label lblHasilSkor;
+        private System.Windows.Forms.Label lblHasilTanggal;
+        private System.Windows.Forms.Label lblTanggal;
+        private System.Windows.Forms.Button btnCheck;
+        private System.Windows.Forms.DataGridView dgvData;
     }
 }
 
